@@ -1,0 +1,111 @@
+.news {
+    padding: 55px 0px 110px;
+
+    background-color: #f9f9f9;
+}
+// --------News Top---------
+.news__inner {
+    display: flex;
+    justify-content: space-between;
+}
+// --------News Slider---------
+.news__slider {
+    position: relative;
+    max-width: 555px;
+    width: 100%;
+    padding: 60px 35px 45px 70px;
+
+    box-shadow: 0px 5px 15.36px 0.64px rgba(128, 127, 127, 0.13);
+    background-color: #fff;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 70px;
+        font-family: 'icons' !important;
+        content: '\f10e';
+
+        width: 65px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+
+        color: #fff;
+        font-size: 16px;
+        background-color: $yellow;
+
+    }
+}
+.news__slider-inner {
+    .slick-btn {
+        top: auto;
+        bottom: -110px;
+    }
+    .slick-next {
+        right: -35px;
+    }
+    .slick-prev {
+        left: auto;
+        right: 20px;
+    }
+    .slick-disabled {
+        border-color: #dadada;
+
+        &::before {
+            color: #dadada;
+        }
+    }
+}
+.news__slider-title {
+    margin-bottom: 15px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #242424;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.news__slider-text {
+    margin-bottom: 30px;
+}
+.news__slider-author {
+    font-family: 'Roboto', sans-serif;
+    color: #212020;
+    letter-spacing: 0.1px;
+}
+// --------News Blog---------
+.news__blog {
+    max-width: 260px;
+    width: 100%;
+}
+.news__images {
+    position: relative;
+}
+.news__date {
+    width: 50px;
+    height: 55px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding-top: 30px;
+
+    font-weight: 700;
+    color:#fff;
+    text-align: center;
+
+    background-color: $yellow;
+}
+.news__blog-title {
+    padding: 12px 0px;
+
+    font-family: 'Roboto', sans-serif;
+    color : #242424;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.news__blog-text {
+    letter-spacing: 0.1px;
+}
+  

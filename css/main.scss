@@ -1,0 +1,82 @@
+@import "../scss/reset";
+@import "../scss/fonts";
+@import "../scss/jquery.fancybox.min";
+@import "../scss/jquery.formstyler";
+
+body {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5e5e5e;
+    // font-family: 'Roboto', sans-serif;
+}
+// <Переменные> ============================================================================================================================================
+$yellow: #ffc222;
+// </Переменные> ============================================================================================================================================
+
+// <Утилиты> ============================================================================================================================================
+.none {
+    display: none !important;
+}
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-left: -100000px;
+    background: transparent;
+    font-size: 0;
+}
+.no-scroll {
+    overflow: hidden;
+}
+// </Утилиты> ============================================================================================================================================
+
+// </Повторяшки> ============================================================================================================================================
+.default-btn {
+    position: relative;
+    display: inline-block;
+    padding: 8px 30px 8px 24px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+
+    border: 1px solid $yellow;
+    border-right-width: 20px;
+    cursor: pointer;
+    outline: none;
+
+    &::after {
+        font-family: "icons" !important;
+        content: "\f105";
+        position: absolute;
+        top: 50%;
+        right: -12px;
+
+        transform: translateY(-50%);
+    }
+}
+// </Повторяшки> ============================================================================================================================================
+
+// <Сетка> ============================================================================================================================================
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+// </Сетка> ============================================================================================================================================
+@import "../scss/header";
+@import "../scss/slider";
+@import "../scss/services";
+@import "../scss/about";
+@import "../scss/form";
+@import "../scss/advantages";
+@import "../scss/news";
+@import "../scss/footer";
+@import "../scss/modal";
+@import "../scss/adaptive";

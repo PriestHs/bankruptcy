@@ -1,0 +1,224 @@
+@media (max-width: 1156px) {
+    .services__items {
+        display: block;
+    }
+    .services__item {
+        max-width: 80%;
+        min-height: 330px;
+        margin: 30px auto; 
+    }
+    .form__inner {
+        background-image: none;
+    }
+    .form__box-inner {
+        display: block;
+
+        .jq-selectbox__select {
+            margin-bottom: 10px;
+        }
+    }
+    .form__box-left {
+        max-width: 100%;
+    }
+    .form__box-right {
+        max-width: 100%;
+    }
+    .news {
+        padding-bottom: 60px;
+    }
+    .news__inner {
+        display: block;
+    }
+    .news__slider {
+        max-width: 100%;
+        margin-bottom: 90px;
+    }
+    .news__blog-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+} 
+
+@media (max-width: 1050px) {
+    .footer__inner {
+        display: block;
+    }
+    .footer__info {
+        max-width: 465px;
+        margin-bottom: 30px;
+    }
+    .footer__map {
+        max-width: 100%;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .slider .slick-btn {
+        display: none;
+    }
+    .services__top,
+    .news__top {
+        display: block;
+    }
+    .services__title-box,
+    .form__title-box,
+    .news__title-box {
+        margin: 0 auto 30px;
+        padding-left: 0;
+
+        text-align: center;
+
+        &::before {
+            display: none;
+        }
+    }
+    .services__btn,
+    .news__btn {
+        text-align: center;
+    }
+    .form {
+        padding-bottom: 25px;
+    }
+    .advantages__inner {
+        display: block;
+    }
+    .advantages__item {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header__contacts {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 15px;
+    }
+    a.header__btn {
+        max-width: 420px;
+        width: 100%;
+        display: block;
+        margin-left: 0px;
+        margin-top: 15px;
+
+        text-align: center;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .header__btn-menu {
+        display: block;
+    }
+    .menu {
+        ul {
+            display: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-top: 20px;
+
+            z-index: 50;
+        }
+        li {
+            display: block;
+
+            text-align: center;
+        }
+        li + li {
+            margin-left: 0;
+        }
+        a {
+            display: block;
+
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            background-color: $yellow;
+        }
+    }
+    .news__blog-wrapper {
+        display: block;
+        text-align: center;
+    }
+    .news__blog {
+        display: inline-block;
+        &:last-child {
+            margin-left: 34px;   
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .services {
+        padding: 50px 0px;
+    }
+    .services__item {
+        max-width: 100%;
+        min-height: 375px;
+        margin: 30px auto; 
+    }
+    .news__blog {
+        &:last-child {
+            margin: 20px 0px 0px 0px;   
+        }
+    }
+} 
+
+@media (max-width: 540px) {
+    .news__slider {
+        padding: 50px 15px 25px 30px;
+
+        &::before {
+            left: 30px;
+        }
+        .slick-btn {
+            bottom: -90px;
+        }
+        .slick-next {
+            right: -17px;
+        } 
+        .slick-prev {
+            right: 38px;
+        }
+    }
+}
+
+
+@media (max-width: 414px) {
+    .slider__title {
+        font-size: 24px;
+    }
+    .slider__text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    a.header__btn {
+        &::before {
+            display: block;
+        }
+    }
+    .advantages__item {
+        padding: 0;
+    }
+}
+@media (max-width: 378px) {
+    a.header__phone {
+        margin-bottom: 15px;
+        margin-left: 14px;
+    }
+}
+
+//----------Min-width-------
+@media (min-width: 700px) {
+    .menu {
+        ul {
+            display: block !important;
+        }
+    }
+}
