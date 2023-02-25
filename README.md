@@ -1,1 +1,1 @@
-# bankruptcy
+# https://priesths.github.io/bankruptcy/
